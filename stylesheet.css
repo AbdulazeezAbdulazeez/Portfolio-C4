@@ -43,6 +43,12 @@ main {
 .fotoMetTitel img {
     border-radius: 50%;
     margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.fotoMetTitel img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
 }
 
 .fotoMetTitel h1 {
@@ -93,24 +99,4 @@ main {
 
 .work-experience p {
     color: #555;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .fotoMetTitel h1 {
-        font-size: 1.2rem;
-    }
-
-    .languages, .skills {
-        padding: 1rem;
-    }
-
-    .language, .skill {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .rating {
-        margin-top: 0.5rem;
-    }
 }
