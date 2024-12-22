@@ -125,3 +125,13 @@ button{
     padding: 1rem 3rem 1rem 3rem;
     margin: 4rem;
 }
+.Footer{
+    background-color: black;
+    padding: 2.5rem 0 2.5rem 0;
+
+}
+.Footer a{
+    color: white;
+    margin: 0 0 0 1rem;
+    text-align: center;
+}
