@@ -59,42 +59,37 @@
         }
 
         .Footer {
+            text-align: center;
+            padding: 15px;
             background-color: #333;
             color: white;
-            padding: 10px;
-            text-align: center;
         }
 
-        .Footer a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        /* Mobile-first design */
         .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
             gap: 20px;
+            justify-content: center;
+            padding: 10px;
         }
 
         .box {
             width: 100%;
             max-width: 300px;
-            height: 100px;
             background-color: lightblue;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100px;
             margin: 10px;
             border-radius: 8px;
         }
 
-        /* Mobile styles for elements */
-        @media (max-width: 600px) {
-            header {
-                text-align: center;
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+                padding: 20px;
+                font-size: 14px;
             }
 
             .fotoMetTitel img {
@@ -106,24 +101,69 @@
                 padding: 10px;
             }
 
-            .Footer {
-                padding: 20px;
-            }
-
-            .box {
+            button {
                 width: 100%;
-                padding: 15px;
+                margin: 10px 0;
+                padding: 10px;
                 font-size: 14px;
             }
 
-            nav ul li {
-                display: block;
-                margin: 5px 0;
+            header nav ul {
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .box {
+                width: 45%;
+            }
+
+            .fotoMetTitel img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .languages, .skills, .work-experience {
+                padding: 15px;
+            }
+
+            button {
+                width: 45%;
+                margin: 10px 5px;
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .container {
+                justify-content: space-between;
+            }
+
+            .box {
+                width: 30%;
+                padding: 20px;
+                font-size: 16px;
+            }
+
+            .fotoMetTitel img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .languages, .skills, .work-experience {
+                padding: 20px;
+            }
+
+            button {
+                width: auto;
+                padding: 12px 24px;
+                font-size: 18px;
             }
         }
     </style>
 </head>
 <body>
+
 <header>
     <a id="BackToTop"></a>
     <nav>
@@ -138,10 +178,10 @@
 
 <main>
     <div class="fotoMetTitel">
-        <img id="pictureOfMe" src="cristiano-ronaldo-of-portugal-reacts-as-he-looks-on-during-news-photo-1725633476-removebg-preview.png" height="150" width="150" alt="Photo of me">
+        <img id="pictureOfMe" src="cristiano-ronaldo-of-portugal-reacts-as-he-looks-on-during-news-photo-1725633476-removebg-preview.png"
+             alt="Photo of me">
         <h1>Hey, I am Abdulazeez and this is my C4</h1>
     </div>
-
     <div>
         <button>Call me</button>
         <button>Mail me</button>
@@ -215,40 +255,6 @@
         </div>
     </article>
 
-    <article class="skills">
-        <h2>Non-programming skills</h2>
-        <div class="skill">
-            <p>– Shopify</p>
-            <div class="rating">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
-            </div>
-        </div>
-        <div class="skill">
-            <p>– Google Spreadsheet</p>
-            <div class="rating">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
-            </div>
-        </div>
-        <div class="skill">
-            <p>– Excel</p>
-            <div class="rating">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
-                <i class="fa-regular fa-circle"></i>
-            </div>
-        </div>
-    </article>
-
     <article class="work-experience">
         <h2>Work Experience</h2>
         <a href="https://www.plukon.be/"><p>Food Factory</p></a>
@@ -264,5 +270,6 @@
         <a href="#">Contact</a>
     </div>
 </footer>
+
 </body>
 </html>
