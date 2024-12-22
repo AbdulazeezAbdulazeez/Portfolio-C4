@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -133,5 +132,4 @@ button{
 .Footer a{
     color: white;
     margin: 0 0 0 1rem;
-    text-align: center;
-}
+justify-content: space-between;}
