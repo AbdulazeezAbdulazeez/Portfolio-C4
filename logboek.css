@@ -1,0 +1,100 @@
+* {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #00bfff;
+}
+
+.logBook {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logBook h1,
+.logBook h2,
+.logBook h3 {
+    color: gray;
+    text-align: center;
+}
+
+.logBook h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.logBook h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.logBook h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+.logBook table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.logBook th,
+.logBook td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.logBook th {
+    background-color: gray;
+    color: white;
+    font-weight: 600;
+}
+
+.logBook td {
+    background-color: #f9f9f9;
+}
+
+.logBook caption {
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 10px;
+    color: gray;
+}
